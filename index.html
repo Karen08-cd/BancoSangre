@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Banco de Sangre – Centro de Donación</title>
+
+  <!-- Tipografía Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- PANEL IZQUIERDO -->
+  <aside class="panel-izquierdo">
+    <div class="logos">
+      <img src="assets/logo-FC.png" class="logo-FC" alt="laCardio">
+    </div>
+
+    <div class="titulos">
+      <h1>BANCO DE SANGRE</h1>
+      <h2>CENTRO DE DONACIÓN</h2>
+    </div>
+
+      <div class="logos">
+      <img src="assets/corazon azul.png" class="logo-corazon" alt="corazon">
+    </div>
+
+  </aside>
+
+  <!-- PANEL DERECHO -->
+  <main class="panel-derecho">
+    <p class="lema">SÁLVA VIDAS · DONA SANGRE</p>
+
+    <p class="texto">
+      Donar sangre es rápido y sencillo.<br>
+      Tu donación puede salvar hasta <strong>3 vidas</strong>.
+    </p>
+
+    <form id="formMensaje">
+      <label>Mensaje</label>
+      <textarea id="mensaje" placeholder="Escribe el mensaje para el donante" required></textarea>
+
+      <label>Teléfono</label>
+      <input id="telefono" placeholder="Ej: 3001234567" required>
+
+      <button type="submit">Enviar Mensaje</button>      
+    </form>
+
+    <p id="respuesta"></p>
+  </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
